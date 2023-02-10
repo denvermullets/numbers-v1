@@ -1,0 +1,42 @@
+[gd_scene load_steps=3 format=3 uid="uid://dj2jpw0rky26s"]
+
+[ext_resource type="PackedScene" uid="uid://dnlj3seosu0sa" path="res://block.tscn" id="1_q8bdv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mb75m"]
+size = Vector2(1117, 20)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="block" parent="." instance=ExtResource("1_q8bdv")]
+position = Vector2(30, 30)
+
+[node name="block2" parent="." instance=ExtResource("1_q8bdv")]
+position = Vector2(243, 30)
+
+[node name="block3" parent="." instance=ExtResource("1_q8bdv")]
+position = Vector2(136, 30)
+
+[node name="block4" parent="." instance=ExtResource("1_q8bdv")]
+position = Vector2(343, 322)
+
+[node name="block5" parent="." instance=ExtResource("1_q8bdv")]
+position = Vector2(453, 123)
+
+[node name="block6" parent="." instance=ExtResource("1_q8bdv")]
+position = Vector2(339, 154)
+
+[node name="block7" parent="." instance=ExtResource("1_q8bdv")]
+position = Vector2(539, 30)
+
+[node name="block8" parent="." instance=ExtResource("1_q8bdv")]
+position = Vector2(339, 30)
+
+[node name="block9" parent="." instance=ExtResource("1_q8bdv")]
+position = Vector2(447, 30)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(8, 1918)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(525.5, 0)
+shape = SubResource("RectangleShape2D_mb75m")
